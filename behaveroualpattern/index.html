@@ -1,0 +1,79 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Behavioral Patterns</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Behavioral Design Patterns</h1>
+
+    <!-- OBSERVER PATTERN -->
+    <div class="card">
+
+      <h2>1. Observer Pattern</h2>
+
+      <input
+        type="text"
+        id="observerMessage"
+        placeholder="Enter Notification Message"
+      >
+
+      <button onclick="notifyUsers()">
+        Notify Subscribers
+      </button>
+
+      <div id="observerOutput"></div>
+
+    </div>
+
+
+    <!-- STRATEGY PATTERN -->
+    <div class="card">
+
+      <h2>2. Strategy Pattern</h2>
+
+      <input
+        type="number"
+        id="amount"
+        placeholder="Enter Amount"
+      >
+
+      <select id="paymentMethod">
+
+        <option value="credit">
+          Credit Card
+        </option>
+
+        <option value="paypal">
+          PayPal
+        </option>
+
+        <option value="upi">
+          UPI
+        </option>
+
+      </select>
+
+      <button onclick="processPayment()">
+        Pay Now
+      </button>
+
+      <div id="strategyOutput"></div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
