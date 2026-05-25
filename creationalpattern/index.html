@@ -1,0 +1,65 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Design Patterns Demo</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>JavaScript Design Patterns</h1>
+
+    <!-- SINGLETON -->
+    <div class="card">
+      <h2>1. Singleton Logger</h2>
+
+      <input type="text" id="logMessage" placeholder="Enter log message"/>
+
+      <button onclick="writeLog()">Write Log</button>
+
+      <div id="logOutput"></div>
+    </div>
+
+    <!-- FACTORY -->
+    <div class="card">
+      <h2>2. Notification Factory</h2>
+
+      <select id="notificationType">
+        <option value="email">Email</option>
+        <option value="sms">SMS</option>
+        <option value="push">Push</option>
+      </select>
+
+      <input type="text" id="notificationMessage" placeholder="Enter notification message"/>
+
+      <button onclick="sendNotification()">
+        Send Notification
+      </button>
+
+      <div id="notificationOutput"></div>
+    </div>
+
+    <!-- BUILDER -->
+    <div class="card">
+      <h2>3. User Builder</h2>
+
+      <input type="text" id="name" placeholder="Name"/>
+      <input type="number" id="age" placeholder="Age"/>
+      <input type="email" id="email" placeholder="Email (Optional)"/>
+      <input type="text" id="phone" placeholder="Phone (Optional)"/>
+      <input type="text" id="address" placeholder="Address (Optional)"/>
+
+      <button onclick="buildUser()">Create User</button>
+
+      <div id="userOutput"></div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
