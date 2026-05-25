@@ -1,0 +1,71 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Structural Design Patterns</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Structural Design Patterns</h1>
+
+    <!-- ADAPTER PATTERN -->
+    <div class="card">
+
+      <h2>1. Adapter Pattern</h2>
+
+      <input
+        type="text"
+        id="adapterMessage"
+        placeholder="Enter message for external API"
+      >
+
+      <button onclick="sendUsingAdapter()">
+        Send Message
+      </button>
+
+      <div id="adapterOutput"></div>
+
+    </div>
+
+    <!-- DECORATOR PATTERN -->
+    <div class="card">
+
+      <h2>2. Decorator Pattern</h2>
+
+      <input
+        type="text"
+        id="username"
+        placeholder="Enter Username"
+      >
+
+      <select id="authStatus">
+        <option value="true">
+          Authenticated User
+        </option>
+
+        <option value="false">
+          Unauthenticated User
+        </option>
+      </select>
+
+      <button onclick="accessProfile()">
+        Access Profile
+      </button>
+
+      <div id="decoratorOutput"></div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
